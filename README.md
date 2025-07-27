@@ -47,8 +47,7 @@ Search for recipes by ingredient and view full details in a beautiful modal popu
 
 ## 📽️ Demo
 
-![](./Images/demo.mp4)
-<!-- [🎥 Watch Demo](https://www.linkedin.com/posts/boluwatife-david-640089309_heres-a-demo-of-the-project-activity-7355161173643689984-WcBv?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE5_2FAB0wo1rn6rJQf0zoPi2aEP6E7PX_Y) -->
+[🎥 Watch Demo](https://www.linkedin.com/posts/boluwatife-david-640089309_heres-a-demo-of-the-project-activity-7355161173643689984-WcBv?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE5_2FAB0wo1rn6rJQf0zoPi2aEP6E7PX_Y)
 
 Click the link above to watch a recording of the project in action.
 
