@@ -96,6 +96,7 @@ function fetchRecipes () {
 ```
 - TheMealDB’s filter.php?i= endpoint only supports searching by one ingredient at a    time. If a user enters multiple ingredients (e.g., "chicken, rice"), the code splits the input and uses just the first one (chicken) for the API call.
 - If recipes are found, uses Promise.all to fetch full details for each recipe (using their idMeal).
+- details.meals[0] is used to access the first (and only) meal object returned by TheMealDB’s lookup.php?i= endpoint.
 - Each recipe’s details are fetched and returned as an object.
 - Once all details are fetched, calls displayRecipes(fullDetails) to show them.
 - If no recipes are found, displays a message.
@@ -197,27 +198,27 @@ recipeModal.addEventListener('click', (event) => {
 - Fetching Full Recipe Details
 
 The initial API response only provided basic meal info.
-You needed to use Promise.all with .map() to fetch full details for each recipe using a second API call.
+I needed to use Promise.all with .map() to fetch full details for each recipe using a second API call. The promise.all handles asyncronous operation, if any fetch fails. Promise.all will reject, allowing the catch block to handle errors gracefully and prevent the app from crashing.
 Displaying Full Details Without Overwhelming the UI
 
-Showing all recipe details directly on the card made the UI cluttered and hard to read.
+Showing all recipe details directly on the card made the UI cluttered and hard to read. I also initially set a link directly to the API which opens a new tab but I decided to view all details on the same page.
 Solution: Use a modal popup to display full details when the user clicks "View Details".
 Modal Not Showing
 
 The modal did not appear when clicking the button.
 Cause: Event listeners for "View Details" buttons were not attached correctly because the buttons were dynamically generated.
 Solution: Add event listeners inside the displayRecipes function after rendering the buttons.
-Modal Not Centered
 
+Modal Not Centered
 The modal was not perfectly centered vertically and horizontally.
 Cause: CSS issues such as unnecessary margins on .modal-content and possible parent element structure problems.
 Solution: Use flexbox on the .modal container and remove conflicting margins from .modal-content.
-Page Scrolling When Modal Is Open
 
+Page Scrolling When Modal Is Open
 The background page scrolled when the modal was open, which was undesirable.
 Solution: Set body { overflow: hidden; } when the modal is open and restore it when closed.
-Modal Content Not Scrollable
 
+Modal Content Not Scrollable
 When the modal content exceeded the viewport height, it was not scrollable.
 Solution: Add max-height: 80vh; and overflow-y: auto; to .modal-content to allow internal scrolling.
 
