@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Fungi</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Floating Icons -->
+    <div class="floating-icon" style="top: 10%; left: 5%;">🍅</div>
+    <div class="floating-icon" style="top: 30%; left: 80%;">🥬</div>
+    <div class="floating-icon" style="top: 60%; left: 20%;">🧄</div>
+    <div class="floating-icon" style="top: 75%; left: 70%;">🧅</div>
+    <div class="floating-icon" style="top: 50%; left: 45%;">🍄</div>
+    <div class="floating-icon" style="top: 20%; left: 90%;">🥕</div>
+    <div class="floating-icon" style="top: 80%; left: 10%;">🌶️</div>
+    <div class="floating-icon" style="top: 40%; left: 60%;">🍆</div>
+    <div class="floating-icon" style="top: 90%; left: 30%;">🥑</div>
+    <div class="floating-icon" style="top: 15%; left: 75%;">🥔</div>
+
+
+    <!-- Modal Overlay -->
+    <div id="recipeModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-content">
+            <i class='bx bx-x' tabindex="0" aria-label="Close modal"></i>
+            <h2 id="modalTitle"></h2>
+            <img id="modalImage" src="" alt="" />
+            <p><strong>Category:</strong> <span id="modalCategory"></span></p>
+            <p><strong>Ingredients:</strong></p>
+            <ul id="modalIngredients"></ul>
+            <p><strong>Instructions:</strong></p>
+            <p id="modalInstructions"></p>
+        </div>
+    </div>
+
+    <div class="container" id="container">
+        <header>
+            <h1><i class='bx bx-bowl-hot'></i> Mr. Fungi</h1>
+            <p>Find recipes based on your ingredients</p>
+        </header>
+
+        <div class="search-section">
+            <input type="text" id="ingredient-input" placeholder="e.g. chicken, tomato, garlic">
+            <button class="search-btn" id="searchBtn">Find Recipes</button>
+        </div>
+        <p class="error-msg"></p>
+    </div>
+
+    <div class="recipe-results" id="recipeResults">
+        <!-- Recipe cards will be injected here by JavaScript -->
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
