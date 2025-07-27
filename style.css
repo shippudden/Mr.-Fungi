@@ -355,3 +355,14 @@ img {
   }
 }
 
+@media (max-width: 436px) {
+  .search-section {
+    width: 95%;
+  }
+}
+@media (max-width: 440px) {
+  .search-section {
+    width: 95%;
+  }
+}
+
