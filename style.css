@@ -344,3 +344,14 @@ img {
   }
 }
 
+@media (max-width: 414px) {
+  .modal-content {
+    width: 90%;
+    max-height: 90vh;
+  }
+
+  .search-section {
+    width: 90%;
+  }
+}
+
