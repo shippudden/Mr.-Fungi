@@ -41,6 +41,10 @@ Search for recipes by ingredient and view full details in a beautiful modal popu
 
 ---
 
+## Screenshots
+[See what it looks like](Images/Screenshot%202025-07-27%20110552.jpg)
+[See what it looks like](Images/Screenshot%202025-07-27%20110643.jpg)
+
 ## 📽️ Demo
 
 [🎥 Watch Demo](https://www.linkedin.com/posts/boluwatife-david-640089309_heres-a-demo-of-the-project-activity-7355161173643689984-WcBv?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE5_2FAB0wo1rn6rJQf0zoPi2aEP6E7PX_Y)
